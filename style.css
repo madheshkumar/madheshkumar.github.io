@@ -35,7 +35,7 @@ body {
 .profile_left {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 60%;
   align-items: start;
   justify-content: center;
   gap: 20px;
@@ -45,11 +45,11 @@ body {
 }
 
 .profile_left h1 {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
 }
 
 .profile_left h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
 }
 
 .profile_left .connect {
@@ -89,7 +89,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 2vw + 1rem, 1.2rem);
   transition: ease-in-out 0.2s;
 }
 
@@ -102,7 +102,7 @@ body {
 .profile_right {
   display: flex;
   flex-direction: row;
-  width: 30%;
+  width: 40%;
   align-items: center;
   justify-content: flex-end;
 }
@@ -141,30 +141,32 @@ body {
 }
 
 .profile_body .profile_container h2 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1vw + 1rem, 2.0rem);
 }
 
 .profile_body .profile_container p {
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 2vw + 1rem, 1.2rem);
   text-indent: 100px;
   text-align: justify;
 }
 .profile_body .profile_container span {
   font-weight: bold;
     color: #3b3b3b;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vw + 1rem, 1.2rem);
 }
-.profile_body .profile_container span a {
+.profile_body .profile_container a {
+  width: clamp(200px, 2vw + 1rem, 300px);
   text-decoration: none;
-  color: #2b2a2a;
-  font-size: 1rem;
-  padding: 10px 15px;
+  text-align: center;
+  color: #3a3939;
+  font-size: clamp(0.8rem, 2vw + 1rem, 1.1rem);
+  padding: 0.8% 1.5%;
   border-radius: 5px ;
+  font-weight: bold;
   background-color: #44bacf;
 }
 .profile_body .split-containers {
   display: flex;
-  flex-direction: row;
 }
 
 .containers1 {
@@ -245,7 +247,7 @@ body {
   flex-direction: row;
   gap: 10px;
   justify-content: space-between;
-  font-size: 1rem;
+  font-size: calc(1rem + 0.2vw);
   color: #dbd9d9;
   position: relative;
   padding: 20px 0;
@@ -290,12 +292,12 @@ body {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(248, 247, 247, 0.5);
-  font-size: 1.2rem;
+  font-size: calc(1rem + 0.2vw);
   color: #333;
 }
 
 .language span {
-  font-size: 1.2rem;
+  font-size: calc(1rem + 0.2vw);
   font-weight: bold;
   color: #333;
 }
@@ -384,6 +386,7 @@ border: #f0f4f5 2px solid;
 /* Skill left section */
 .skill-left {
   display: flex;
+  flex:1;
   align-items: center;
   gap: 20px;
   width: 30%;
@@ -404,11 +407,12 @@ border: #f0f4f5 2px solid;
 /* Skill right section */
 .skill-right {
   flex-grow: 1;
+  flex:2;
 }
 
 /* Progress bar container */
 .progress {
-  width: 90%;
+  
   background-color: #d8d7d7;
   border-radius: 5px;
   overflow: hidden;
@@ -482,4 +486,82 @@ border: #f0f4f5 2px solid;
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 800px) {
+  .profile_head {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile_left {
+    width: 100%;
+  }
+
+  .profile_left h1 {
+    font-size: calc(1.5rem + 1vw);
+  }
+
+  .profile_right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .profile_right .wire {
+    display: block;
+    width:6px;
+    height: 20px;
+  }
+
+  .profile_right img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile_body {
+    padding: 0% 5%;
+  }
+
+  .profile_body .profile_container {
+    padding: 2% 5%;
+  }
+
+  .profile_body .profile_container a{
+    width: 100%;
+    padding: 3% 0;
+  }
+  .split-containers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .containers1 {
+    width: 100%;
+    border-right: none;
+  }
+  .containers2 {
+    width: 100%;
+    border-left: none;
+  }
+
+  .leftbranch .wire, .rightbranch .wire {
+    display: none;
+  }
+  .container > div > div{
+    flex-direction: column;
+  }
+  .container > #languages-container >div {
+    flex-direction: row;
+  }
+  .container > #skills-container >div {
+    flex-direction:column;
+  }
+  .profile_footer {
+    padding: 2% 5%;
+  }
 }

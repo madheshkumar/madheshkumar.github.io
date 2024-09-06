@@ -126,13 +126,13 @@ var projects = [
   },
   {
     name: "Blog Website",
-    description: "A Blog Website that can create and manage blog posts with the help of MongoDB" +
+    description: "A Blog Website that can create and manage blog posts with the help of MongoDB " +
     "as the backend and EJS as the templating engine.",
     link: "https://github.com/madheshkumar/BlogWebsite",
   },
   {
     name: "Todo List",
-    description: "A dynamic Todo List application that can create and manage todo lists with the help of" +
+    description: "A dynamic Todo List application that can create and manage todo lists with the help of " +
     "Node.js as the backend and EJS as the templating engine.",
     link: "https://github.com/madheshkumar/TodoList-v2",
   },
@@ -144,13 +144,13 @@ var projects = [
   },
   {
     name: "Water Potability Detection",
-    description: "A Machine Learning Model that can detect the potability of water based on the" +
+    description: "A Machine Learning Model that can detect the potability of water based on the " +
     "physical and chemical properties of the water.",
     link: "https://github.com/madheshkumar/Water_potability_prediction",
   },
   {
     name: "Diabetic Retinopathy Detection with Vgg-19 and GAN Model",
-    description: "A Machine Learning Model that can detect the Diabetic Retinopathy from the" +
+    description: "A Machine Learning Model that can detect the Diabetic Retinopathy from the " +
     "fundus images of the eye with the help of Vgg-19 and generated synthetic fundus images of GAN Model.",
     link: "https://github.com/madheshkumar/Final-Year-Project",
   }

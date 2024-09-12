@@ -10,9 +10,11 @@ var skills = [
   "express.js",
   "MongoDB",
   "MySQL",
-  "AWS",
-  "Docker",
   "Git",
+  "Docker",
+  "Kubernetes",
+  "Terraform",
+  "AWS",
 ];
 var skillsimg = [
   "python.png",
@@ -25,12 +27,15 @@ var skillsimg = [
   "express.png",
   "mongodb.png",
   "mysql.png",
-  "aws.png",
-  "docker.png",
   "git.png",
+  "docker.png",
+  "kubernetes.svg",
+  "terraform.png",
+  "aws.png",
+  
 ];
 
-var skills_level = ["90%", "80%", "95%", "95%", "90%", "70%", "80%", "70%", "60%", "75%", "30%", "30%", "50%"];
+var skills_level = ["90%", "80%", "95%", "95%", "90%", "70%", "80%", "70%", "60%", "75%","50%", "50%","40%","40%", "30%"];
 
 //education
 var education_degree = [

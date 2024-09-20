@@ -8,6 +8,7 @@ var skills = [
   "React",
   "Node.js",
   "express.js",
+  "Spring Boot",
   "MongoDB",
   "MySQL",
   "Git",
@@ -25,6 +26,7 @@ var skillsimg = [
   "react.png",
   "nodejs.png",
   "express.png",
+  "springboot.png",
   "mongodb.png",
   "mysql.png",
   "git.png",
@@ -35,7 +37,7 @@ var skillsimg = [
   
 ];
 
-var skills_level = ["90%", "80%", "95%", "95%", "90%", "70%", "80%", "70%", "60%", "75%","50%", "50%","40%","40%", "30%"];
+var skills_level = ["90%", "80%", "95%", "95%", "90%", "70%", "80%", "70%","60%", "60%", "75%","50%", "50%","40%","40%", "30%"];
 
 //education
 var education_degree = [

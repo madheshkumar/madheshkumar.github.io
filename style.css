@@ -24,10 +24,6 @@ body {
   overflow: auto;
 }
 
-#status{
-  height:16px;
-  padding-inline: 5px;
-}
 
 .profile_head {
   height: max-content;

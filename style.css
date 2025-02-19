@@ -24,6 +24,12 @@ body {
   overflow: auto;
 }
 
+#status{
+  height:16px;
+  width: auto;
+  padding-inline: 5px;
+}
+
 .profile_head {
   height: max-content;
   display: flex;
